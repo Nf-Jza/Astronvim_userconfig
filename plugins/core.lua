@@ -1,25 +1,76 @@
 return {
   -- customize alpha options
+  -- {
+  --   "goolord/alpha-nvim",
+  --   opts = function(_, opts)
+  --     -- customize the dashboard header
+  --     opts.section.header.val = {
+  --       " █████  ███████ ████████ ██████   ██████",
+  --       "██   ██ ██         ██    ██   ██ ██    ██",
+  --       "███████ ███████    ██    ██████  ██    ██",
+  --       "██   ██      ██    ██    ██   ██ ██    ██",
+  --       "██   ██ ███████    ██    ██   ██  ██████",
+  --       " ",
+  --       "    ███    ██ ██    ██ ██ ███    ███",
+  --       "    ████   ██ ██    ██ ██ ████  ████",
+  --       "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
+  --       "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
+  --       "    ██   ████   ████   ██ ██      ██",
+  --     }
+  --     return opts
+  --   end,
+  -- },
+  
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        "░▀█▀░█░█░▀█▀░█▀▀░░░▀█▀░█▀▀░░░█▀▀░█▀█░█▀█░█▀▄",
+        "░░█░░█▀█░░█░░▀▀█░░░░█░░▀▀█░░░█░█░█░█░█░█░█░█",
+        "░░▀░░▀░▀░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░░░▀▀▀░▀▀▀░▀▀▀░▀▀░",
+        "        -----------------------------",
+        "  ░█░█░█▀▀░█▀▀░█▀█░░░█▀▀░█▀█░▀█▀░█▀█░█▀▀░█",
+        "  ░█▀▄░█▀▀░█▀▀░█▀▀░░░█░█░█░█░░█░░█░█░█░█░▀",
+        "  ░▀░▀░▀▀▀░▀▀▀░▀░░░░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀",
       }
       return opts
     end,
   },
+
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+  },
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+    -- Optional; default configuration will be used if setup isn't called.
+    config = function()
+      require("everforest").setup({
+        -- Your config here
+      })
+    end,
+  },
+  {
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+        require 'nordic' .load()
+    end
+  },
+
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --

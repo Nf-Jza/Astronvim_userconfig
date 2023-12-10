@@ -34,7 +34,7 @@ return {
     ["<leader>x1"] = { ":! python %<cr>", desc = " Python"},
     ["<leader>x2"] = { ":! node %<cr>", desc = " Javascript"},
     ["<leader>x3"] = { ":! bash %<cr>", desc = "󱆃 Bash"},
-    ["<leader>#"] = { ":! cat %<cr>", desc = "󰄛 cat"}
+    ["<leader>#"] = { ":! cat %<cr>", desc = "󰄛 cat"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
