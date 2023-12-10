@@ -30,6 +30,11 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+    ["<leader>x"] = { name = "> Execute" },
+    ["<leader>x1"] = { ":! python %<cr>", desc = " Python"},
+    ["<leader>x2"] = { ":! node %<cr>", desc = " Javascript"},
+    ["<leader>x3"] = { ":! bash %<cr>", desc = "󱆃 Bash"},
+    ["<leader>#"] = { ":! cat %<cr>", desc = "󰄛 cat"}
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
