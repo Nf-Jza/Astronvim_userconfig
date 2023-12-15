@@ -20,7 +20,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "everforest",
+  colorscheme = "fluoromachine",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -52,6 +52,8 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
+      "clangd"
+      -- "ccls"
       -- "pyright"
     },
   },
@@ -83,8 +85,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-  end,
-
+  end, 
 }
-
-

@@ -11,13 +11,14 @@ return {
   -- },
 
 
-  require('nightfox').setup({
-    options = {
-      styles = {
-        comments = "",
-        keywords = "italic",
-        types = "bold",
-      }
-    }
-  }),
+--   require('nightfox').setup({
+--     options = {
+--       styles = {
+--         comments = "",
+--         keywords = "italic",
+--         types = "bold",
+--       }
+--     }
+--   }),
+  --
 }
