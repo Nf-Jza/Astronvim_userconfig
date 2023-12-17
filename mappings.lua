@@ -35,6 +35,7 @@ return {
     ["<leader>x2"] = { ":! node %<cr>", desc = " Javascript"},
     ["<leader>x3"] = { ":! bash %<cr>", desc = "󱆃 Bash"},
     ["<leader>#"] = { ":! cat %<cr>", desc = "󰄛 cat"},
+    ["<leader>x4"] = {":!g++ -Wall % && ./a.out<cr>", desc=" C++"},
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
