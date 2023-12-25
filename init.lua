@@ -20,7 +20,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "dracula",
+  colorscheme = "carbonfox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -52,7 +52,8 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      "clangd"
+      "clangd",
+      "lua_ls"
       -- "ccls"
       -- "pyright"
     },
@@ -72,7 +73,7 @@ return {
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
-  polish = function()
+  polish = function() 
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
@@ -85,5 +86,5 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
-  end, 
+  end,
 }
