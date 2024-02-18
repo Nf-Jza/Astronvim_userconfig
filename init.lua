@@ -20,7 +20,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "carbonfox",
+  colorscheme = "fluoromachine",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -53,7 +53,9 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       "clangd",
-      "lua_ls"
+      "lua_ls",
+      "remark_ls"
+
       -- "ccls"
       -- "pyright"
     },
