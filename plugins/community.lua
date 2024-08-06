@@ -30,12 +30,6 @@ return {
     event = "VeryLazy"
   },
 
-  { import = "astrocommunity.colorscheme.fluormachine-nvim" },
-  {
-    "fluoromachine.nvim",
-    event = "VeryLazy"
-  },
-
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   {
     "github-nvim-theme",

@@ -20,7 +20,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "fluoromachine",
+  colorscheme = "carbonfox",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -54,10 +54,10 @@ return {
     servers = {
       "clangd",
       "lua_ls",
-      "remark_ls"
+      "remark_ls",
 
       -- "ccls"
-      -- "pyright"
+      "pyright"
     },
   },
 

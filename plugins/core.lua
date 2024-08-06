@@ -37,7 +37,6 @@ return {
       return opts
     end,
   },
-
   {
     "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
@@ -62,6 +61,27 @@ return {
       })
     end,
   },
+  {
+    'projekt0n/caret.nvim',
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      require('caret').setup({
+        -- ...
+      })
+      vim.opt.background = 'light'
+      -- vim.cmd('colorscheme caret')
+    end,
+  },
+  -- {
+  --   'kiddos/gemini.nvim',
+  --   lazy = false,
+  --   build = { 'pip install -r requirements.txt', ':UpdateRemotePlugins' },
+  --   config = function()
+  --     require('gemini').setup({
+  --     })
+  --   end
+  -- },
   {
     'AlexvZyl/nordic.nvim',
     lazy = false,

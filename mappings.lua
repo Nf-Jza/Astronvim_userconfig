@@ -17,7 +17,6 @@ return {
     --   function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
     --   desc = "Previous buffer",
     -- },
-
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
       function()
@@ -31,11 +30,15 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>x"] = { name = "> Execute" },
+    ["<leader>a"] = {name="󰭻 ChatGPT"},
+
+    ["<leader>ax"] = { ":ChatGPT<cr>", desc = "󱋊 Start Chat"},
     ["<leader>x1"] = { ":! python %<cr>", desc = " Python"},
     ["<leader>x2"] = { ":! node %<cr>", desc = " Javascript"},
     ["<leader>x3"] = { ":! bash %<cr>", desc = "󱆃 Bash"},
     ["<leader>#"] = { ":! cat %<cr>", desc = "󰄛 cat"},
     ["<leader>x4"] = {":!g++ -Wall % && ./a.out<cr>", desc=" C++"},
+
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
